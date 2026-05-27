@@ -29,10 +29,13 @@ class YtDownloader private constructor() : Downloader() {
         request.headers().forEach { (key, values) ->
             values.forEach { requestBuilder.addHeader(key, it) }
         }
+
         requestBuilder.addHeader(
             "User-Agent",
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
         )
+        requestBuilder.addHeader("Accept-Language", "en-US,en;q=0.9")
+        requestBuilder.addHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8")
 
         val body = request.dataToSend()?.let { RequestBody.create(null, it) }
         val okRequest = when (request.httpMethod()) {
