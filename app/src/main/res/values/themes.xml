@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.MuzikTube" parent="android:Theme.Material.NoTitleBar" />
+</resources>
