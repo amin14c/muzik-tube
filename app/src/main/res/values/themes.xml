@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.MuzikTube" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.MuzikTube" parent="android:Theme.Black.NoTitleBar">
         <item name="android:windowBackground">#080808</item>
         <item name="android:statusBarColor">#080808</item>
         <item name="android:navigationBarColor">#111111</item>
